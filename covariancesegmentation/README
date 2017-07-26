@@ -1,0 +1,1 @@
+The covariance.m file is what performs the segmentation by enhancing thin structures. In the file, you specify the source of the volume, and after running the script, it writes out to vtk files the original volume, the enhanced volume, and a thresholded version of the enhanced volume.

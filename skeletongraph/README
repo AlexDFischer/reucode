@@ -1,0 +1,6 @@
+First, convert the segmented volume to a skeleton using `skel1 = Skeleton3D(Vol)`.
+
+Next, convert the skeleton into a graph and write it to files for visualization with
+    [skel2, node, link] = Vol2Graph(skel1, min_length, writeFiles, intLinksFname, extLinksFname, endPointsFname, intBPointsFname, extBPointsFname)
+
+min_length is the minimum length of links to keep. writeFiles is 1 if you want to write to files, 0 otherwise. The remaining file names are txt files that are lists of points to be visualized. Visualize them with the points2vtk program in the visualizegraph folder.
